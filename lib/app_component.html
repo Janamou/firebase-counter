@@ -1,0 +1,10 @@
+<div *ngFor="let domain of domains">
+    {{domain.name}}
+    {{domain.favourites}}
+    <material-fab mini raised (trigger)="like(domain)" [materialTooltip]="likeMsg">
+        <glyph icon="thumb_up"></glyph>
+    </material-fab>
+    <material-fab mini raised (trigger)="dislike(domain)" [materialTooltip]="dislikeMsg">
+        <glyph icon="thumb_down"></glyph>
+    </material-fab>
+</div>
