@@ -21,10 +21,10 @@ class DomainComponent {
   DomainComponent(this._service);
 
   like() async {
-    domain.likes = await _service.sendLike(domain);
+    domain.likes = await _service.sendLike(domain.key);
   }
 
   dislike() async {
-    domain.likes = await _service.sendDislike(domain);
+    domain.likes = await _service.sendDislike(domain.key);
   }
 }

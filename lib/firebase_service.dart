@@ -19,10 +19,10 @@ class FirebaseService {
     });
   }
 
-  Future<int> sendLike(Domain d) async {
+  Future<int> sendLike(String key) async {
     try {
       Transaction transaction =
-          await _ref.child(d.key).child('likes').transaction((current) {
+          await _ref.child(key).child('likes').transaction((current) {
         if (current != null) {
           current++;
         }
@@ -35,10 +35,10 @@ class FirebaseService {
     }
   }
 
-  Future<int> sendDislike(Domain d) async {
+  Future<int> sendDislike(String key) async {
     try {
       Transaction transaction =
-          await _ref.child(d.key).child('likes').transaction((current) {
+          await _ref.child(key).child('likes').transaction((current) {
         if (current != null) {
           current--;
         }
