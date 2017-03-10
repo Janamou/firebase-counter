@@ -11,6 +11,7 @@ class FirebaseService {
   FirebaseService() {
     _ref = database().ref('domains');
 
+    // Maybe use once() instead
     _ref.onChildAdded.listen((e) {
       DataSnapshot snapshot = e.snapshot;
       Map map = snapshot.val();
