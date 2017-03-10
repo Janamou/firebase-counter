@@ -2,15 +2,15 @@
   "domains": {
     "d1": {
       "name": "domain.com",
-      "favourites": 0
+      "likes": 0
     },
     "d2": {
       "name": "example.com",
-      "favourites": 0
+      "likes": 0
     },
     "d3": {
       "name": "example.org",
-      "favourites": 0
+      "likes": 0
     }
   }
 }
