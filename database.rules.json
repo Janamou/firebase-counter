@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "domains": {
+      ".read": true,
+      "$id": {
+        "likes": {
+          ".write": "newData.exists()",
+          ".validate": "newData.isNumber()"
+        }
+      }
+    }
+  }
+}
