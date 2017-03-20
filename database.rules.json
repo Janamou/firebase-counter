@@ -1,13 +1,9 @@
 {
   "rules": {
-    "domains": {
+    "counter": {
       ".read": true,
-      "$id": {
-        "likes": {
-          ".write": "newData.exists()",
-          ".validate": "newData.isNumber()"
-        }
-      }
+      ".write": "newData.exists()",
+      ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000000"
     }
   }
 }

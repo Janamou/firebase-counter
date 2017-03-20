@@ -1,18 +1,46 @@
 import 'package:angular2/core.dart';
-import 'package:angular2_components/angular2_components.dart';
-import 'package:firebase_counter/firebase_service.dart';
-import 'package:firebase_counter/domain.dart';
-import 'package:firebase_counter/domain_component.dart';
+import 'package:firebase/firebase.dart';
 
 @Component(
     selector: 'main-app',
-    templateUrl: 'app_component.html',
-    directives: const [DomainComponent, materialDirectives],
-    providers: const [FirebaseService, materialProviders])
+    styleUrls: const ['app_component.css'],
+    templateUrl: 'app_component.html')
 class AppComponent {
-  final FirebaseService _service;
+  final DatabaseReference _ref;
+  int count;
 
-  List<Domain> get domains => _service.domains;
+  increase() async {
+    try {
+      Transaction transaction =
+          await _ref.transaction((current) {
+        if (current != null) {
+          count = ++current;
+        }
+        return current;
+      });
+    } catch (e) {
+      print("Unable to post like");
+    }
+  }
 
-  AppComponent(this._service);
+  decrease() async {
+    try {
+      Transaction transaction =
+      await _ref.transaction((current) {
+        if (current != null) {
+          count = --current;
+        }
+        return current;
+      });
+    } catch (e) {
+      print("Unable to post dislike");
+    }
+  }
+
+  AppComponent() : _ref = database().ref('counter') {
+    _ref.onValue.listen((e) {
+      DataSnapshot snapshot = e.snapshot;
+      count = snapshot.val();
+    });
+  }
 }

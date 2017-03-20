@@ -1,0 +1,18 @@
+:host {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+span, a {
+    vertical-align: middle;
+    display: inline-block;
+}
+span {
+    font-size: 5rem;
+    padding: 0 1rem;
+}
+a {
+    font-size: 4rem;
+    cursor: pointer;
+}
