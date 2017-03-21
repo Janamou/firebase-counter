@@ -9,38 +9,33 @@ class AppComponent {
   final DatabaseReference _ref;
   int count;
 
-  increase() async {
-    try {
-      Transaction transaction =
-          await _ref.transaction((current) {
-        if (current != null) {
-          count = ++current;
-        }
-        return current;
-      });
-    } catch (e) {
-      print("Unable to post like");
-    }
-  }
-
-  decrease() async {
-    try {
-      Transaction transaction =
-      await _ref.transaction((current) {
-        if (current != null) {
-          count = --current;
-        }
-        return current;
-      });
-    } catch (e) {
-      print("Unable to post dislike");
-    }
-  }
-
   AppComponent() : _ref = database().ref('counter') {
     _ref.onValue.listen((e) {
       DataSnapshot snapshot = e.snapshot;
       count = snapshot.val();
     });
+  }
+
+  increase() {
+    count = _transactionHelper((c) => ++c);
+  }
+
+  decrease() {
+    count = _transactionHelper((c) => --c);
+  }
+
+  // no try catch?
+  _transactionHelper(Function f) async {
+    var newCount = 0;
+
+    await _ref.transaction((current) {
+      if (current != null) {
+        current = f(current);
+        newCount = current;
+      }
+      return current;
+    });
+
+    return newCount;
   }
 }
