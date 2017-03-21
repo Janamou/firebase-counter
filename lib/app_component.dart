@@ -1,41 +1,43 @@
 import 'package:angular2/core.dart';
+import 'package:angular2_components/angular2_components.dart';
 import 'package:firebase/firebase.dart';
 
 @Component(
     selector: 'main-app',
     styleUrls: const ['app_component.css'],
-    templateUrl: 'app_component.html')
+    templateUrl: 'app_component.html',
+    directives: const [materialDirectives],
+    providers: const [materialProviders])
 class AppComponent {
-  final DatabaseReference _ref;
+  DatabaseReference _ref;
   int count;
 
-  AppComponent() : _ref = database().ref('counter') {
+  AppComponent() {
+    _ref = database().ref('counter');
+
     _ref.onValue.listen((e) {
       DataSnapshot snapshot = e.snapshot;
       count = snapshot.val();
     });
   }
 
-  increase() {
-    count = _transactionHelper((c) => ++c);
+  like() async {
+    count = await _transactionHelper((c) => c + 1);
   }
 
-  decrease() {
-    count = _transactionHelper((c) => --c);
+  dislike() async {
+    count = await _transactionHelper((c) => c - 1);
   }
 
   // no try catch?
   _transactionHelper(Function f) async {
-    var newCount = 0;
-
-    await _ref.transaction((current) {
+    Transaction transaction = await _ref.transaction((current) {
       if (current != null) {
         current = f(current);
-        newCount = current;
       }
       return current;
     });
 
-    return newCount;
+    return transaction.snapshot.val();
   }
 }

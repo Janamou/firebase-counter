@@ -1,3 +1,7 @@
-<a (click)="decrease()">-</a>
+<material-fab mini raised (trigger)="dislike()">
+    <glyph icon="thumb_down"></glyph>
+</material-fab>
 <span>{{count}}</span>
-<a (click)="increase()">+</a>
+<material-fab mini raised (trigger)="like()">
+    <glyph icon="thumb_up"></glyph>
+</material-fab>
