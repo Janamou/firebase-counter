@@ -17,6 +17,13 @@ class FirebaseService {
       Map map = snapshot.val();
       domains.add(new Domain.fromMap(snapshot.key, map));
     });
+
+    _ref.onChildChanged.listen((e) {
+      DataSnapshot snapshot = e.snapshot;
+      Map map = snapshot.val();
+      domains.where((d) => d.key == snapshot.key).toList()[0].likes =
+          map['likes'];
+    });
   }
 
   Future<int> sendLike(String key) async {
