@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:angular2/core.dart';
 import 'package:angular2_components/angular2_components.dart';
 import 'package:firebase/firebase.dart';
@@ -21,19 +23,18 @@ class AppComponent {
     });
   }
 
-  like() async {
-    count = await _transactionHelper((c) => c + 1);
-  }
-
   dislike() async {
-    count = await _transactionHelper((c) => c - 1);
+    count = await _updateDatabase((c) => c - 1);
   }
 
-  // no try catch?
-  _transactionHelper(Function f) async {
-    Transaction transaction = await _ref.transaction((current) {
+  like() async {
+    count = await _updateDatabase((c) => c + 1);
+  }
+
+  Future<int> _updateDatabase(UpdateFunction<int> update) async {
+    var transaction = await _ref.transaction((current) {
       if (current != null) {
-        current = f(current);
+        current = update(current);
       }
       return current;
     });
@@ -41,3 +42,5 @@ class AppComponent {
     return transaction.snapshot.val();
   }
 }
+
+typedef T UpdateFunction<T>(T value);
