@@ -1,11 +1,12 @@
 :host {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
+
 span {
-    font-size: 5rem;
-    padding: 0 1rem;
-    display: inline-block;
+  font-size: 5rem;
+  padding: 0 1rem;
+  display: inline-block;
 }
