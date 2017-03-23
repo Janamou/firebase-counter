@@ -21,12 +21,12 @@ class AppComponent {
     });
   }
 
-  like() async {
-    count = await _transactionHelper((c) => c + 1);
-  }
-
   dislike() async {
     count = await _transactionHelper((c) => c - 1);
+  }
+
+  like() async {
+    count = await _transactionHelper((c) => c + 1);
   }
 
   // no try catch?
