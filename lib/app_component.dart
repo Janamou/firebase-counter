@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:angular2/core.dart';
 import 'package:angular2_components/angular2_components.dart';
 import 'package:firebase/firebase.dart';
@@ -30,7 +32,7 @@ class AppComponent {
   }
 
   // no try catch?
-  _transactionHelper(Function f) async {
+  Future<int> _transactionHelper(Function f) async {
     Transaction transaction = await _ref.transaction((current) {
       if (current != null) {
         current = f(current);
