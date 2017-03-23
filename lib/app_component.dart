@@ -31,11 +31,10 @@ class AppComponent {
     count = await _transactionHelper((c) => c + 1);
   }
 
-  // no try catch?
-  Future<int> _transactionHelper(Function f) async {
-    Transaction transaction = await _ref.transaction((current) {
+  Future<int> _transactionHelper(UpdateFunction<int> update) async {
+    var transaction = await _ref.transaction((current) {
       if (current != null) {
-        current = f(current);
+        current = update(current);
       }
       return current;
     });
@@ -43,3 +42,5 @@ class AppComponent {
     return transaction.snapshot.val();
   }
 }
+
+typedef T UpdateFunction<T>(T value);
