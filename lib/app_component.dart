@@ -24,14 +24,14 @@ class AppComponent {
   }
 
   dislike() async {
-    count = await _transactionHelper((c) => c - 1);
+    count = await _updateDatabase((c) => c - 1);
   }
 
   like() async {
-    count = await _transactionHelper((c) => c + 1);
+    count = await _updateDatabase((c) => c + 1);
   }
 
-  Future<int> _transactionHelper(UpdateFunction<int> update) async {
+  Future<int> _updateDatabase(UpdateFunction<int> update) async {
     var transaction = await _ref.transaction((current) {
       if (current != null) {
         current = update(current);
