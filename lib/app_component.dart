@@ -10,11 +10,12 @@ import 'package:firebase/firebase.dart';
     templateUrl: 'app_component.html',
     directives: const [materialDirectives],
     providers: const [materialProviders])
-class AppComponent {
+class AppComponent implements OnInit {
   DatabaseReference _ref;
   int count;
 
-  AppComponent() {
+  @override
+  ngOnInit() {
     _ref = database().ref('counter');
 
     _ref.onValue.listen((e) {
