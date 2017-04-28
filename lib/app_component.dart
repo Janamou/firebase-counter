@@ -33,7 +33,7 @@ class AppComponent implements OnInit {
   }
 
   Future<int> _updateDatabase(UpdateFunction<int> update) async {
-    var transaction = await _ref.transaction((current) {
+    Transaction transaction = await _ref.transaction((current) {
       if (current != null) {
         current = update(current);
       }
