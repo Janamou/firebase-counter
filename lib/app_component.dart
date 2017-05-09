@@ -35,8 +35,7 @@ class AppComponent implements OnInit {
 
     _ref = database().ref('counter');
     _ref.onValue.listen((e) {
-      DataSnapshot snapshot = e.snapshot;
-      count = snapshot.val();
+      count = e.snapshot.val();
     });
   }
 
