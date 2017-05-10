@@ -35,4 +35,12 @@ class AppComponent implements OnInit {
       count = e.snapshot.val();
     });
   }
+
+  dislike() {
+    print("dislike");
+  }
+
+  like() {
+    print("like");
+  }
 }
