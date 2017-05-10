@@ -1,0 +1,52 @@
+{
+  "ngDeps": {
+    "1": "angular_components.model.selection.string_selection_options",
+    "3": [
+      {
+        "1": "package:meta/meta.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/async/async.dart",
+        "5": false
+      },
+      {
+        "1": "../ui/has_renderer.dart",
+        "5": false
+      },
+      {
+        "1": "./select.dart",
+        "5": false
+      },
+      {
+        "1": "./selection_options.dart",
+        "5": false
+      }
+    ],
+    "6": "string_selection_options.dart"
+  },
+  "type": {
+    "StringSelectionOptions": {
+      "class": "Identifier",
+      "name": "StringSelectionOptions",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/string_selection_options.dart",
+      "prefix": null,
+      "value": null
+    },
+    "StringSuggestionFilter": {
+      "class": "Identifier",
+      "name": "StringSuggestionFilter",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/string_selection_options.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_stringFormatSuggestion": {
+      "class": "Identifier",
+      "name": "_stringFormatSuggestion",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/string_selection_options.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

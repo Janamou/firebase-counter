@@ -1,0 +1,253 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:intl/intl.dart",
+        "5": false
+      },
+      {
+        "1": "../../content/deferred_content_aware.dart",
+        "5": false
+      },
+      {
+        "1": "../../focus/keyboard_only_focus_indicator.dart",
+        "5": false
+      },
+      {
+        "1": "../../glyph/glyph.dart",
+        "5": false
+      },
+      {
+        "1": "../../theme/dark_theme.dart",
+        "5": false
+      },
+      {
+        "1": "paper_tooltip.dart",
+        "5": false
+      },
+      {
+        "1": "tooltip_target.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MaterialIconTooltipComponent",
+        "5": [
+          {
+            "1": "AcxDarkTheme",
+            "4": "darkTheme"
+          },
+          {
+            "1": "ElementRef",
+            "4": "elementRef"
+          },
+          {
+            "1": "String",
+            "3": [
+              "const Attribute('type')"
+            ],
+            "4": "type"
+          },
+          {
+            "1": "String",
+            "3": [
+              "const Attribute('size')"
+            ],
+            "4": "size"
+          }
+        ],
+        "6": [
+          "DeferredContentAware"
+        ],
+        "7": [
+          {
+            "2": "ClickableTooltipTargetDirective"
+          },
+          {
+            "2": "GlyphComponent"
+          },
+          {
+            "2": "KeyboardOnlyFocusIndicatorDirective"
+          },
+          {
+            "2": "MaterialPaperTooltipComponent"
+          }
+        ]
+      }
+    ],
+    "6": "icon_tooltip.dart"
+  },
+  "type": {
+    "MaterialIconTooltipComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-icon-tooltip",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialIconTooltipComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/icon_tooltip.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "AcxDarkTheme",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": "type",
+              "identifier": null,
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": true,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": "size",
+              "identifier": null,
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": true,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 4,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "    <glyph [icon]=\"icon\" [attr.size]=\"iconSize\"\n        tabindex=\"0\" [attr.aria-label]=\"helpTooltipLabel\"\n        keyboardOnlyFocusIndicator\n        clickableTooltipTarget #tooltipRef=\"tooltipTarget\">\n    </glyph>\n    <material-tooltip-card [for]=\"tooltipRef\">\n      <ng-content></ng-content>\n    </material-tooltip-card>",
+        "templateUrl": "asset:angular_components/lib/src/components/material_tooltip/src/icon_tooltip.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:angular_components/lib/src/components/material_tooltip/src/icon_tooltip.scss.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "AcxDarkTheme",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "DeferredContentAware",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "MaterialIconTooltipComponent",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "tooltipRef",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "tooltipBehavior",
+          "read": null
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

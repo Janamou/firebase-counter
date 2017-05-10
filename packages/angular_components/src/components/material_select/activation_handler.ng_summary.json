@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "ActivationHandler": {
+      "class": "Identifier",
+      "name": "ActivationHandler",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_select/activation_handler.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

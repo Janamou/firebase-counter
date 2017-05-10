@@ -1,0 +1,40 @@
+{
+  "ngDeps": {
+    "1": "",
+    "4": [
+      {
+        "1": "src/icon_tooltip.dart",
+        "2": [
+          "MaterialIconTooltipComponent"
+        ]
+      },
+      {
+        "1": "src/ink_tooltip.dart"
+      },
+      {
+        "1": "src/paper_tooltip.dart",
+        "2": [
+          "MaterialPaperTooltipComponent"
+        ]
+      },
+      {
+        "1": "src/tooltip.dart"
+      },
+      {
+        "1": "src/tooltip_controller.dart",
+        "2": [
+          "Tooltip"
+        ]
+      },
+      {
+        "1": "src/tooltip_source.dart"
+      },
+      {
+        "1": "src/tooltip_target.dart"
+      }
+    ],
+    "6": "material_tooltip.dart"
+  },
+  "type": {},
+  "alias": {}
+}

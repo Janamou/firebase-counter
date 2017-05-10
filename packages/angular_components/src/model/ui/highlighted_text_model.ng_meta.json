@@ -1,0 +1,54 @@
+{
+  "ngDeps": {
+    "1": "angular_components.model.ui.highlighted_text_model",
+    "3": [
+      {
+        "1": "dart:math",
+        "2": [
+          "max"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:logging/logging.dart",
+        "5": false
+      },
+      {
+        "1": "package:meta/meta.dart",
+        "5": false
+      },
+      {
+        "1": "package:quiver/core.dart",
+        "2": [
+          "hash2"
+        ],
+        "5": false
+      }
+    ],
+    "6": "highlighted_text_model.dart"
+  },
+  "type": {
+    "HighlightedTextSegment": {
+      "class": "Identifier",
+      "name": "HighlightedTextSegment",
+      "moduleUrl": "asset:angular_components/lib/src/model/ui/highlighted_text_model.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Highlighter": {
+      "class": "Identifier",
+      "name": "Highlighter",
+      "moduleUrl": "asset:angular_components/lib/src/model/ui/highlighted_text_model.dart",
+      "prefix": null,
+      "value": null
+    },
+    "TextHighlighter": {
+      "class": "Identifier",
+      "name": "TextHighlighter",
+      "moduleUrl": "asset:angular_components/lib/src/model/ui/highlighted_text_model.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

@@ -1,0 +1,164 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:intl/intl.dart",
+        "5": false
+      },
+      {
+        "1": "../../../laminate/popup/popup.dart",
+        "2": [
+          "DomPopupSourceFactory",
+          "PopupSourceDirective",
+          "PopupRef"
+        ],
+        "5": false
+      },
+      {
+        "1": "../../../model/action/delayed_action.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/ui/toggle.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MaterialTooltipSourceDirective",
+        "5": [
+          {
+            "1": "DomPopupSourceFactory",
+            "4": "domPopupSourceFactory"
+          },
+          {
+            "1": "ElementRef",
+            "4": "elementRef"
+          }
+        ],
+        "6": [
+          "Toggler",
+          "AfterViewInit",
+          "OnDestroy"
+        ]
+      }
+    ],
+    "6": "tooltip_source.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../../../laminate/popup/popup.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "../../../model/action/delayed_action.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "../../../model/ui/toggle.template.dart",
+        "4": "i3"
+      }
+    ]
+  },
+  "type": {
+    "MaterialTooltipSourceDirective": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "[tooltipSource]",
+      "exportAs": "tooltipSource",
+      "type": {
+        "class": "Type",
+        "name": "MaterialTooltipSourceDirective",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_source.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DomPopupSourceFactory",
+                "moduleUrl": "asset:angular_components/lib/src/laminate/popup/src/dom_popup_source.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {
+        "mouseover": "onMouseOver()",
+        "keyup": "onKeyUp()",
+        "focus": "onFocus()",
+        "blur": "onBlur()",
+        "mouseleave": "onMouseLeave()"
+      },
+      "hostProperties": {
+        "attr.style": "'cursor: pointer'"
+      },
+      "hostAttributes": {
+        "tabindex": "0",
+        "aria-label": "tooltipLabel"
+      },
+      "lifecycleHooks": [
+        6,
+        1
+      ],
+      "template": null,
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "tooltipShowDelay": {
+      "class": "Identifier",
+      "name": "tooltipShowDelay",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_source.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

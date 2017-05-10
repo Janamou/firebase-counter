@@ -1,0 +1,20 @@
+{
+  "ngDeps": null,
+  "type": {
+    "AsyncUpdateScheduler": {
+      "class": "Identifier",
+      "name": "AsyncUpdateScheduler",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/async_update_scheduler.dart",
+      "prefix": null,
+      "value": null
+    },
+    "OnUpdateCallback": {
+      "class": "Identifier",
+      "name": "OnUpdateCallback",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/async_update_scheduler.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

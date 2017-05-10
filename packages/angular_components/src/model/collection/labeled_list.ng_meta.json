@@ -1,0 +1,40 @@
+{
+  "ngDeps": {
+    "1": "angular_components.model.collection.labeled_list",
+    "3": [
+      {
+        "1": "package:collection/collection.dart",
+        "4": "collection",
+        "5": false
+      },
+      {
+        "1": "../ui/display_name.dart",
+        "5": false
+      }
+    ],
+    "6": "labeled_list.dart",
+    "7": [
+      {
+        "1": "../ui/display_name.template.dart",
+        "4": "i0"
+      }
+    ]
+  },
+  "type": {
+    "LabelFunction": {
+      "class": "Identifier",
+      "name": "LabelFunction",
+      "moduleUrl": "asset:angular_components/lib/src/model/collection/labeled_list.dart",
+      "prefix": null,
+      "value": null
+    },
+    "LabeledList": {
+      "class": "Identifier",
+      "name": "LabeledList",
+      "moduleUrl": "asset:angular_components/lib/src/model/collection/labeled_list.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

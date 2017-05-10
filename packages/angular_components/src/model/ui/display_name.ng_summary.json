@@ -1,0 +1,33 @@
+{
+  "ngDeps": {
+    "1": "angular_components.model.ui.display_name",
+    "3": [
+      {
+        "1": "package:quiver/core.dart",
+        "5": false
+      },
+      {
+        "1": "../formatters/formatter.dart",
+        "5": false
+      }
+    ],
+    "6": "display_name.dart"
+  },
+  "type": {
+    "HasUIDisplayName": {
+      "class": "Identifier",
+      "name": "HasUIDisplayName",
+      "moduleUrl": "asset:angular_components/lib/src/model/ui/display_name.dart",
+      "prefix": null,
+      "value": null
+    },
+    "LabeledValue": {
+      "class": "Identifier",
+      "name": "LabeledValue",
+      "moduleUrl": "asset:angular_components/lib/src/model/ui/display_name.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

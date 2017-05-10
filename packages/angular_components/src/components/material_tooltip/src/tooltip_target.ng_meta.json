@@ -1,0 +1,398 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "../../../laminate/components/popup/popup.dart",
+        "2": [
+          "PopupSourceDirective"
+        ],
+        "5": false
+      },
+      {
+        "1": "../../../laminate/popup/popup.dart",
+        "2": [
+          "DomPopupSourceFactory"
+        ],
+        "5": false
+      },
+      {
+        "1": "../../../model/action/delayed_action.dart",
+        "5": false
+      },
+      {
+        "1": "../../../utils/angular/reference/reference.dart",
+        "5": false
+      },
+      {
+        "1": "../../../utils/browser/events/events.dart",
+        "5": false
+      },
+      {
+        "1": "./tooltip_controller.dart",
+        "5": false
+      },
+      {
+        "1": "tooltip_source.dart",
+        "2": [
+          "tooltipShowDelay"
+        ],
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MaterialTooltipTargetDirective",
+        "5": [
+          {
+            "1": "DomPopupSourceFactory",
+            "4": "domPopupSourceFactory"
+          },
+          {
+            "1": "ViewContainerRef",
+            "4": "viewContainerRef"
+          },
+          {
+            "1": "ElementRef",
+            "4": "elementRef"
+          },
+          {
+            "1": "ChangeDetectorRef",
+            "4": "changeDetector"
+          }
+        ],
+        "6": [
+          "OnInit",
+          "OnDestroy"
+        ]
+      },
+      {
+        "1": "ClickableTooltipTargetDirective",
+        "5": [
+          {
+            "1": "DomPopupSourceFactory",
+            "4": "domPopupSourceFactory"
+          },
+          {
+            "1": "ViewContainerRef",
+            "4": "viewContainerRef"
+          },
+          {
+            "1": "ElementRef",
+            "4": "elementRef"
+          },
+          {
+            "1": "ChangeDetectorRef",
+            "4": "changeDetector"
+          }
+        ],
+        "6": [
+          "OnInit",
+          "OnDestroy"
+        ]
+      }
+    ],
+    "6": "tooltip_target.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../../../laminate/components/popup/popup.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "../../../laminate/popup/popup.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "../../../model/action/delayed_action.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "../../../utils/angular/reference/reference.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "../../../utils/browser/events/events.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "./tooltip_controller.template.dart",
+        "4": "i6"
+      },
+      {
+        "1": "tooltip_source.template.dart",
+        "4": "i7"
+      }
+    ]
+  },
+  "type": {
+    "ClickableTooltipTargetDirective": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "[clickableTooltipTarget]",
+      "exportAs": "tooltipTarget",
+      "type": {
+        "class": "Type",
+        "name": "ClickableTooltipTargetDirective",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_target.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DomPopupSourceFactory",
+                "moduleUrl": "asset:angular_components/lib/src/laminate/popup/src/dom_popup_source.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ViewContainerRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/view_container_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": "asset:angular2/lib/src/core/change_detection/change_detector_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {
+        "tooltipActivate": "tooltipActivate"
+      },
+      "hostListeners": {
+        "click": "onClick()",
+        "blur": "onBlur($event)",
+        "keypress": "kbTrigger($event)",
+        "mouseover": "onMouseOver()",
+        "mouseleave": "onMouseLeave()"
+      },
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0,
+        1
+      ],
+      "template": null,
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "MaterialTooltipTargetDirective": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "[tooltipTarget]",
+      "exportAs": "tooltipTarget",
+      "type": {
+        "class": "Type",
+        "name": "MaterialTooltipTargetDirective",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_target.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DomPopupSourceFactory",
+                "moduleUrl": "asset:angular_components/lib/src/laminate/popup/src/dom_popup_source.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ViewContainerRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/view_container_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": "asset:angular2/lib/src/core/change_detection/change_detector_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {
+        "keyup": "showTooltipWithDelay()",
+        "click": "hideTooltip()",
+        "blur": "hideTooltip()",
+        "mouseover": "onMouseOver()",
+        "mouseleave": "onMouseLeave()"
+      },
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0,
+        1
+      ],
+      "template": null,
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "TooltipBehavior": {
+      "class": "Identifier",
+      "name": "TooltipBehavior",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_target.dart",
+      "prefix": null,
+      "value": null
+    },
+    "TooltipTarget": {
+      "class": "Identifier",
+      "name": "TooltipTarget",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_target.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

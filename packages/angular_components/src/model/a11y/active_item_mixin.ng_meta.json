@@ -1,0 +1,41 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:html",
+        "4": "dom",
+        "5": false
+      },
+      {
+        "1": "../../utils/angular/properties/properties.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/browser/dom_service/dom_service.dart",
+        "5": false
+      }
+    ],
+    "6": "active_item_mixin.dart",
+    "7": [
+      {
+        "1": "../../utils/angular/properties/properties.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../../utils/browser/dom_service/dom_service.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "ActiveItemMixin": {
+      "class": "Identifier",
+      "name": "ActiveItemMixin",
+      "moduleUrl": "asset:angular_components/lib/src/model/a11y/active_item_mixin.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

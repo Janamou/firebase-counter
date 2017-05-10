@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "CombinedList": {
+      "class": "Identifier",
+      "name": "CombinedList",
+      "moduleUrl": "asset:angular_components/lib/src/model/collection/combined_list.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

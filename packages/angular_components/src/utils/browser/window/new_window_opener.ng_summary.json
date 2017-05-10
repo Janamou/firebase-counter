@@ -1,0 +1,46 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "NewWindowOpener",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false
+          }
+        ]
+      }
+    ],
+    "6": "new_window_opener.dart"
+  },
+  "type": {
+    "NewWindowOpener": {
+      "class": "Type",
+      "name": "NewWindowOpener",
+      "moduleUrl": "asset:angular_components/lib/src/utils/browser/window/new_window_opener.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
+    },
+    "openInNewWindow": {
+      "class": "Identifier",
+      "name": "openInNewWindow",
+      "moduleUrl": "asset:angular_components/lib/src/utils/browser/window/new_window_opener.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

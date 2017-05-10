@@ -1,0 +1,28 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "../../model/ui/icon.dart",
+        "5": false
+      }
+    ],
+    "6": "button_wrapper.dart",
+    "7": [
+      {
+        "1": "../../model/ui/icon.template.dart",
+        "4": "i0"
+      }
+    ]
+  },
+  "type": {
+    "MaterialButtonWrapper": {
+      "class": "Identifier",
+      "name": "MaterialButtonWrapper",
+      "moduleUrl": "asset:angular_components/lib/src/components/mixins/button_wrapper.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

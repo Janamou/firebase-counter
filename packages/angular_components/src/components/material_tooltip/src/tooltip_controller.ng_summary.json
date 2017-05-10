@@ -1,0 +1,60 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "TooltipController",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false
+          }
+        ]
+      }
+    ],
+    "6": "tooltip_controller.dart"
+  },
+  "type": {
+    "Tooltip": {
+      "class": "Identifier",
+      "name": "Tooltip",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_controller.dart",
+      "prefix": null,
+      "value": null
+    },
+    "TooltipController": {
+      "class": "Type",
+      "name": "TooltipController",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_controller.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
+    },
+    "_ProxyTooltip": {
+      "class": "Identifier",
+      "name": "_ProxyTooltip",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_controller.dart",
+      "prefix": null,
+      "value": null
+    },
+    "keepAliveDuration": {
+      "class": "Identifier",
+      "name": "keepAliveDuration",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/tooltip_controller.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

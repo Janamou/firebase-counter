@@ -1,0 +1,48 @@
+{
+  "ngDeps": null,
+  "type": {
+    "Disposable": {
+      "class": "Identifier",
+      "name": "Disposable",
+      "moduleUrl": "asset:angular_components/lib/src/utils/disposer/disposer.dart",
+      "prefix": null,
+      "value": null
+    },
+    "DisposeFunction": {
+      "class": "Identifier",
+      "name": "DisposeFunction",
+      "moduleUrl": "asset:angular_components/lib/src/utils/disposer/disposer.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Disposer": {
+      "class": "Identifier",
+      "name": "Disposer",
+      "moduleUrl": "asset:angular_components/lib/src/utils/disposer/disposer.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_NoopDisposable": {
+      "class": "Identifier",
+      "name": "_NoopDisposable",
+      "moduleUrl": "asset:angular_components/lib/src/utils/disposer/disposer.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_SingleFunctionDisposable": {
+      "class": "Identifier",
+      "name": "_SingleFunctionDisposable",
+      "moduleUrl": "asset:angular_components/lib/src/utils/disposer/disposer.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_oneShotDisposerMemoryLeakWarning": {
+      "class": "Identifier",
+      "name": "_oneShotDisposerMemoryLeakWarning",
+      "moduleUrl": "asset:angular_components/lib/src/utils/disposer/disposer.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

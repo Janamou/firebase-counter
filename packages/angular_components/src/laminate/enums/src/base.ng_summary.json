@@ -1,0 +1,20 @@
+{
+  "ngDeps": null,
+  "type": {
+    "ElementStyleEnum": {
+      "class": "Identifier",
+      "name": "ElementStyleEnum",
+      "moduleUrl": "asset:angular_components/lib/src/laminate/enums/src/base.dart",
+      "prefix": null,
+      "value": null
+    },
+    "SetPropertyFn": {
+      "class": "Identifier",
+      "name": "SetPropertyFn",
+      "moduleUrl": "asset:angular_components/lib/src/laminate/enums/src/base.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

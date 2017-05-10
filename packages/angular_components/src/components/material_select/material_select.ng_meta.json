@@ -1,0 +1,248 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/selection/selection_container.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/selection/selection_model.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/ui/has_renderer.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/ui/template_support.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/angular/properties/properties.dart",
+        "5": false
+      },
+      {
+        "1": "../material_list/material_list.dart",
+        "5": false
+      },
+      {
+        "1": "material_select_base.dart",
+        "5": false
+      },
+      {
+        "1": "material_select_item.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MaterialSelectComponent",
+        "6": [
+          "OnDestroy"
+        ],
+        "7": [
+          {
+            "2": "MaterialListComponent"
+          },
+          {
+            "2": "MaterialSelectItemComponent"
+          },
+          {
+            "2": "NgIf"
+          },
+          {
+            "2": "NgFor"
+          }
+        ]
+      }
+    ],
+    "6": "material_select.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../../model/selection/selection_container.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "../../model/selection/selection_model.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "../../model/ui/has_renderer.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "../../model/ui/template_support.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "../../utils/angular/properties/properties.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "../material_list/material_list.template.dart",
+        "4": "i6"
+      },
+      {
+        "1": "material_select_base.template.dart",
+        "4": "i7"
+      },
+      {
+        "1": "material_select_item.template.dart",
+        "4": "i8"
+      }
+    ]
+  },
+  "type": {
+    "MaterialSelectComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-select",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialSelectComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_select/material_select.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "options": "options",
+        "width": "width",
+        "itemRenderer": "itemRenderer",
+        "componentRenderer": "componentRenderer",
+        "selection": "selection",
+        "disabled": "disabled"
+      },
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "attr.aria-disabled": "disabledStr"
+      },
+      "hostAttributes": {
+        "role": "listbox"
+      },
+      "lifecycleHooks": [
+        1
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<material-list [width]=\"width\">\n  <ng-content></ng-content>\n  <div class=\"options-wrapper\" *ngIf=\"options != null\">\n    <div *ngFor=\"let group of options.optionGroups trackBy trackByIndexFn\" group\n         [class.empty]=\"group.isEmpty\">\n      <template [ngIf]=\"group.isNotEmpty\">\n        <span *ngIf=\"group.hasLabel\" label>{{group.uiDisplayName}}</span>\n        <material-select-item *ngFor=\"let item of group\"\n                              [itemRenderer]=\"itemRenderer\"\n                              [disabled]=\"disabled\"\n                              [componentRenderer]=\"componentRenderer\"\n                              [selection]=\"selection\"\n                              [value]=\"item\">\n        </material-select-item>\n      </template>\n    </div>\n  </div>\n</material-list>\n",
+        "templateUrl": "asset:angular_components/lib/src/components/material_select/material_select.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:angular_components/lib/src/components/material_select/material_select.scss.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "HasRenderer",
+              "moduleUrl": "asset:angular_components/lib/src/model/ui/has_renderer.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "MaterialSelectComponent",
+              "moduleUrl": "asset:angular_components/lib/src/components/material_select/material_select.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "SelectionContainer",
+              "moduleUrl": "asset:angular_components/lib/src/model/selection/selection_container.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "MaterialSelectComponent",
+              "moduleUrl": "asset:angular_components/lib/src/components/material_select/material_select.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "SelectionItem",
+                "moduleUrl": "asset:angular_components/lib/src/model/selection/selection_container.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": false,
+          "propertyName": "selectItems",
+          "read": null
+        }
+      ],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

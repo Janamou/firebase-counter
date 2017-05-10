@@ -1,0 +1,38 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "dart:math",
+        "5": false
+      },
+      {
+        "1": "../../model/selection/selection_model.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/selection/selection_options.dart",
+        "5": false
+      },
+      {
+        "1": "./activation_handler.dart",
+        "5": false
+      }
+    ],
+    "6": "shift_click_selection.dart"
+  },
+  "type": {
+    "ShiftClickSelectionMixin": {
+      "class": "Identifier",
+      "name": "ShiftClickSelectionMixin",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_select/shift_click_selection.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

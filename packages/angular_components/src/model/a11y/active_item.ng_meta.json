@@ -1,0 +1,44 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:collection",
+        "5": false
+      },
+      {
+        "1": "package:collection/collection.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/async/async.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/id_generator/id_generator.dart",
+        "5": false
+      }
+    ],
+    "6": "active_item.dart",
+    "7": [
+      {
+        "1": "../../utils/async/async.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../../utils/id_generator/id_generator.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "ActiveItemModel": {
+      "class": "Identifier",
+      "name": "ActiveItemModel",
+      "moduleUrl": "asset:angular_components/lib/src/model/a11y/active_item.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

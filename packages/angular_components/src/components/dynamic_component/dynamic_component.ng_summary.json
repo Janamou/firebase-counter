@@ -1,0 +1,155 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/ui/has_renderer.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/async/async.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "DynamicComponent",
+        "5": [
+          {
+            "1": "DynamicComponentLoader",
+            "4": "_componentLoader"
+          },
+          {
+            "1": "ChangeDetectorRef",
+            "4": "_changeDetectorRef"
+          }
+        ],
+        "6": [
+          "OnDestroy"
+        ]
+      }
+    ],
+    "6": "dynamic_component.dart"
+  },
+  "type": {
+    "DynamicComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "dynamic-component",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "DynamicComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/dynamic_component/dynamic_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DynamicComponentLoader",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "componentType": "componentType",
+        "value": "value"
+      },
+      "inputTypes": {
+        "componentType": " Type",
+        "value": " dynamic"
+      },
+      "outputs": {
+        "onLoad": "onLoad"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        1
+      ],
+      "template": {
+        "encapsulation": 2,
+        "template": "<span #marker></span>",
+        "templateUrl": "asset:angular_components/lib/src/components/dynamic_component/dynamic_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "marker",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "viewContainerRef",
+          "read": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "ViewContainerRef",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          }
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

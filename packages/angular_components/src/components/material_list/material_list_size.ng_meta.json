@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "MaterialListSize": {
+      "class": "Identifier",
+      "name": "MaterialListSize",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_list/material_list_size.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

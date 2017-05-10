@@ -1,0 +1,20 @@
+{
+  "ngDeps": null,
+  "type": {
+    "LazyStreamController": {
+      "class": "Identifier",
+      "name": "LazyStreamController",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/lazy_stream_controller.dart",
+      "prefix": null,
+      "value": null
+    },
+    "StreamControllerFactory": {
+      "class": "Identifier",
+      "name": "StreamControllerFactory",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/lazy_stream_controller.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

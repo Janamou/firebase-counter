@@ -1,0 +1,91 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/ui/accepts_width.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/angular/properties/properties.dart",
+        "5": false
+      },
+      {
+        "1": "material_list_size.dart",
+        "5": false
+      }
+    ],
+    "4": [
+      {
+        "1": "material_list_size.dart"
+      }
+    ],
+    "5": [
+      {
+        "1": "MaterialListComponent",
+        "6": [
+          "AcceptsWidth"
+        ],
+        "7": [
+          {
+            "2": "NgClass"
+          }
+        ]
+      }
+    ],
+    "6": "material_list.dart"
+  },
+  "type": {
+    "MaterialListComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-list",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialListComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_list/material_list.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "size": "size",
+        "width": "width"
+      },
+      "inputTypes": {
+        "size": " String"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "attr.size": "size"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<ng-content></ng-content>",
+        "templateUrl": "asset:angular_components/lib/src/components/material_list/material_list.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:angular_components/lib/src/components/material_list/material_list.scss.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

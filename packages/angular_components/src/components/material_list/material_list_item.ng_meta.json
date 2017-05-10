@@ -1,0 +1,262 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:html",
+        "4": "dom",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/a11y/active_item_mixin.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/angular/properties/properties.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/browser/dom_service/dom_service.dart",
+        "5": false
+      },
+      {
+        "1": "../../utils/disposer/disposer.dart",
+        "5": false
+      },
+      {
+        "1": "../button_decorator/button_decorator.dart",
+        "5": false
+      },
+      {
+        "1": "../mixins/material_dropdown_base.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MaterialListItemComponent",
+        "5": [
+          {
+            "1": "ElementRef",
+            "4": "elementRef"
+          },
+          {
+            "1": "DomService",
+            "4": "domService"
+          },
+          {
+            "1": "DropdownHandle",
+            "3": [
+              "const Optional()"
+            ],
+            "4": "_dropdown"
+          },
+          {
+            "1": "String",
+            "3": [
+              "const Attribute('tabindex')"
+            ],
+            "4": "_hostTabIndex"
+          },
+          {
+            "1": "String",
+            "3": [
+              "const Attribute('role')"
+            ],
+            "4": "role"
+          }
+        ],
+        "6": [
+          "OnDestroy"
+        ]
+      }
+    ],
+    "6": "material_list_item.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../../model/a11y/active_item_mixin.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "../../utils/angular/properties/properties.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "../../utils/browser/dom_service/dom_service.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "../../utils/disposer/disposer.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "../button_decorator/button_decorator.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "../mixins/material_dropdown_base.template.dart",
+        "4": "i6"
+      }
+    ]
+  },
+  "type": {
+    "MaterialListItemComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-list-item",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialListItemComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_list/material_list_item.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DomService",
+                "moduleUrl": "asset:angular_components/lib/src/utils/browser/dom_service/dom_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DropdownHandle",
+                "moduleUrl": "asset:angular_components/lib/src/components/mixins/material_dropdown_base.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": "tabindex",
+              "identifier": null,
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": true,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": "role",
+              "identifier": null,
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": true,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "disabled": "disabled",
+        "active": "active",
+        "closeOnActivate": "closeOnActivate"
+      },
+      "inputTypes": {},
+      "outputs": {
+        "trigger": "trigger"
+      },
+      "hostListeners": {
+        "mouseenter": "onMouseEnter()",
+        "click": "handleClick($event)",
+        "keypress": "handleKeyPress($event)",
+        "mouseleave": "onMouseLeave()"
+      },
+      "hostProperties": {
+        "attr.tabindex": "tabIndex",
+        "attr.role": "role",
+        "class.disabled": "disabled",
+        "class.active": "active",
+        "attr.aria-disabled": "disabledStr"
+      },
+      "hostAttributes": {
+        "class": "item"
+      },
+      "lifecycleHooks": [
+        1
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<ng-content></ng-content>",
+        "templateUrl": "asset:angular_components/lib/src/components/material_list/material_list_item.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:angular_components/lib/src/components/material_list/material_list_item.scss.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

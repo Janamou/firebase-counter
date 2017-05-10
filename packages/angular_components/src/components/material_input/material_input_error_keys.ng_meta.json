@@ -1,0 +1,48 @@
+{
+  "ngDeps": null,
+  "type": {
+    "checkIntegerErrorKey": {
+      "class": "Identifier",
+      "name": "checkIntegerErrorKey",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_input/material_input_error_keys.dart",
+      "prefix": null,
+      "value": null
+    },
+    "inputNotNumberErrorKey": {
+      "class": "Identifier",
+      "name": "inputNotNumberErrorKey",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_input/material_input_error_keys.dart",
+      "prefix": null,
+      "value": null
+    },
+    "nonNegativeIntegerRequiredErrorKey": {
+      "class": "Identifier",
+      "name": "nonNegativeIntegerRequiredErrorKey",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_input/material_input_error_keys.dart",
+      "prefix": null,
+      "value": null
+    },
+    "numberAboveUpperBoundErrorKey": {
+      "class": "Identifier",
+      "name": "numberAboveUpperBoundErrorKey",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_input/material_input_error_keys.dart",
+      "prefix": null,
+      "value": null
+    },
+    "numberBelowLowerBoundErrorKey": {
+      "class": "Identifier",
+      "name": "numberBelowLowerBoundErrorKey",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_input/material_input_error_keys.dart",
+      "prefix": null,
+      "value": null
+    },
+    "positiveIntegerRequiredErrorKey": {
+      "class": "Identifier",
+      "name": "positiveIntegerRequiredErrorKey",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_input/material_input_error_keys.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

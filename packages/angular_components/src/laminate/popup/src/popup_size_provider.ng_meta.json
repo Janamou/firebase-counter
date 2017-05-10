@@ -1,0 +1,34 @@
+{
+  "ngDeps": null,
+  "type": {
+    "FixedPopupSizeProvider": {
+      "class": "Identifier",
+      "name": "FixedPopupSizeProvider",
+      "moduleUrl": "asset:angular_components/lib/src/laminate/popup/src/popup_size_provider.dart",
+      "prefix": null,
+      "value": null
+    },
+    "PercentagePopupSizeProvider": {
+      "class": "Identifier",
+      "name": "PercentagePopupSizeProvider",
+      "moduleUrl": "asset:angular_components/lib/src/laminate/popup/src/popup_size_provider.dart",
+      "prefix": null,
+      "value": null
+    },
+    "PopupSizeProvider": {
+      "class": "Identifier",
+      "name": "PopupSizeProvider",
+      "moduleUrl": "asset:angular_components/lib/src/laminate/popup/src/popup_size_provider.dart",
+      "prefix": null,
+      "value": null
+    },
+    "unboundedPopupSize": {
+      "class": "Identifier",
+      "name": "unboundedPopupSize",
+      "moduleUrl": "asset:angular_components/lib/src/laminate/popup/src/popup_size_provider.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

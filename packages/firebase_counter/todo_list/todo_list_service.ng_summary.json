@@ -1,0 +1,39 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "TodoListService",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false
+          }
+        ]
+      }
+    ],
+    "6": "todo_list_service.dart"
+  },
+  "type": {
+    "TodoListService": {
+      "class": "Type",
+      "name": "TodoListService",
+      "moduleUrl": "asset:firebase_counter/lib/todo_list/todo_list_service.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
+    }
+  },
+  "alias": {}
+}

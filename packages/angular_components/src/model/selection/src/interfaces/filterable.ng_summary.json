@@ -1,0 +1,20 @@
+{
+  "ngDeps": null,
+  "type": {
+    "AbstractFilterable": {
+      "class": "Identifier",
+      "name": "AbstractFilterable",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/src/interfaces/filterable.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Filterable": {
+      "class": "Identifier",
+      "name": "Filterable",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/src/interfaces/filterable.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

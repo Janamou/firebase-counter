@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "Formatter": {
+      "class": "Identifier",
+      "name": "Formatter",
+      "moduleUrl": "asset:angular_components/lib/src/model/formatters/formatter.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

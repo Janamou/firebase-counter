@@ -1,0 +1,318 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "../../../laminate/enums/alignment.dart",
+        "5": false
+      },
+      {
+        "1": "../../../laminate/popup/popup.dart",
+        "2": [
+          "PopupSource"
+        ],
+        "5": false
+      },
+      {
+        "1": "../../content/deferred_content.dart",
+        "5": false
+      },
+      {
+        "1": "../../content/deferred_content_aware.dart",
+        "5": false
+      },
+      {
+        "1": "../../material_popup/material_popup.dart",
+        "5": false
+      },
+      {
+        "1": "../module.dart",
+        "5": false
+      },
+      {
+        "1": "tooltip_controller.dart",
+        "5": false
+      },
+      {
+        "1": "tooltip_target.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "getTooltipHandle",
+        "3": true,
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false
+          }
+        ],
+        "5": [
+          {
+            "1": "MaterialPaperTooltipComponent",
+            "4": "tooltip"
+          }
+        ]
+      },
+      {
+        "1": "MaterialPaperTooltipComponent",
+        "5": [
+          {
+            "1": "TooltipController",
+            "4": "_tooltipController"
+          },
+          {
+            "1": "ChangeDetectorRef",
+            "4": "_changeDetector"
+          }
+        ],
+        "6": [
+          "DeferredContentAware",
+          "Tooltip"
+        ],
+        "7": [
+          {
+            "2": "DeferredContentDirective"
+          },
+          {
+            "2": "NgIf"
+          },
+          {
+            "2": "MaterialPopupComponent"
+          }
+        ]
+      }
+    ],
+    "6": "paper_tooltip.dart"
+  },
+  "type": {
+    "MaterialPaperTooltipComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-tooltip-card",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialPaperTooltipComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/paper_tooltip.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "TooltipController",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "preferredPositions": "preferredPositions",
+        "offsetX": "offsetX",
+        "offsetY": "offsetY",
+        "tooltipRef": "for"
+      },
+      "inputTypes": {
+        "preferredPositions": " List",
+        "offsetX": " int",
+        "offsetY": " int",
+        "tooltipRef": " TooltipTarget"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<material-popup *ngIf=\"popupSource != null\"\n                [visible]=\"showPopup\"\n                matchSourceWidth=\"false\"\n                enforceSpaceConstraints\n                trackLayoutChanges\n                [preferredPositions]=\"preferredPositions\"\n                [offsetX]=\"offsetX\"\n                [offsetY]=\"offsetY\"\n                autoDismiss=\"false\"\n                [source]=\"popupSource\">\n  <div class=\"paper-container\"\n       (mouseover)=\"onMouseOver()\"\n       (mouseleave)=\"onMouseLeave()\">\n    <div class=\"header\"><ng-content select=\"header\"></ng-content></div>\n    <div class=\"body\"><ng-content></ng-content></div>\n    <div class=\"footer\"><ng-content select=\"footer\"></ng-content></div>\n  </div>\n</material-popup>",
+        "templateUrl": "asset:angular_components/lib/src/components/material_tooltip/src/paper_tooltip.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:angular_components/lib/src/components/material_tooltip/src/paper_tooltip.scss.css"
+        ],
+        "ngContentSelectors": [
+          "header",
+          "*",
+          "footer"
+        ]
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "tooltipControllerBinding",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "Tooltip",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": {
+            "class": "Factory",
+            "name": "getTooltipHandle",
+            "prefix": null,
+            "moduleUrl": null,
+            "value": null,
+            "diDeps": []
+          },
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "DeferredContentAware",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "MaterialPaperTooltipComponent",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "MaterialPopupComponent",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "popupChild",
+          "read": null
+        }
+      ]
+    },
+    "_defaultPositions": {
+      "class": "Identifier",
+      "name": "_defaultPositions",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/paper_tooltip.dart",
+      "prefix": null,
+      "value": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "getTooltipHandle": {
+      "class": "Factory",
+      "name": "getTooltipHandle",
+      "prefix": null,
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tooltip/src/paper_tooltip.dart",
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "MaterialPaperTooltipComponent",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "value": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false,
+          "isValue": false
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

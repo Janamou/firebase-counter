@@ -1,0 +1,27 @@
+{
+  "ngDeps": null,
+  "type": {
+    "ItemSelectionEvent": {
+      "class": "Identifier",
+      "name": "ItemSelectionEvent",
+      "moduleUrl": "asset:angular_components/lib/src/components/reorder_list/reorder_events.dart",
+      "prefix": null,
+      "value": null
+    },
+    "MultiReorderEvent": {
+      "class": "Identifier",
+      "name": "MultiReorderEvent",
+      "moduleUrl": "asset:angular_components/lib/src/components/reorder_list/reorder_events.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ReorderEvent": {
+      "class": "Identifier",
+      "name": "ReorderEvent",
+      "moduleUrl": "asset:angular_components/lib/src/components/reorder_list/reorder_events.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

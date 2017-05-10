@@ -1,0 +1,47 @@
+{
+  "ngDeps": {
+    "1": "angular_components.model.collection.list_differ",
+    "3": [
+      {
+        "1": "dart:collection",
+        "5": false
+      },
+      {
+        "1": "package:observable/observable.dart",
+        "5": false
+      }
+    ],
+    "6": "list_differ.dart"
+  },
+  "type": {
+    "DiffEntry": {
+      "class": "Identifier",
+      "name": "DiffEntry",
+      "moduleUrl": "asset:angular_components/lib/src/model/collection/list_differ.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ListDiff": {
+      "class": "Identifier",
+      "name": "ListDiff",
+      "moduleUrl": "asset:angular_components/lib/src/model/collection/list_differ.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_ComparingListDiff": {
+      "class": "Identifier",
+      "name": "_ComparingListDiff",
+      "moduleUrl": "asset:angular_components/lib/src/model/collection/list_differ.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_ObservedListDiff": {
+      "class": "Identifier",
+      "name": "_ObservedListDiff",
+      "moduleUrl": "asset:angular_components/lib/src/model/collection/list_differ.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}
