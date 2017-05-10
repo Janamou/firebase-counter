@@ -1,6 +1,8 @@
 // Copyright (c) 2017. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
+import 'dart:async';
+
 import 'package:firebase/firebase.dart';
 
 import 'package:angular2/core.dart';
@@ -42,5 +44,16 @@ class AppComponent implements OnInit {
 
   like() {
     print("like");
+  }
+
+  Future<int> updateDatabase(Function update) async {
+    var transaction = await ref.transaction((current) {
+      if (current != null) {
+        current = update(current);
+      }
+      return current;
+    });
+
+    return transaction.snapshot.val();
   }
 }
