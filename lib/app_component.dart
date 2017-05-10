@@ -20,6 +20,7 @@ import 'todo_list/todo_list_component.dart';
 )
 class AppComponent implements OnInit {
   int count = 0;
+  DatabaseReference ref;
 
   @override
   ngOnInit() {
@@ -28,5 +29,10 @@ class AppComponent implements OnInit {
         authDomain: "angulardart-firebase-io-2017.firebaseapp.com",
         databaseURL: "https://angulardart-firebase-io-2017.firebaseio.com",
         storageBucket: "angulardart-firebase-io-2017.appspot.com");
+
+    ref = database().ref('counter');
+    ref.onValue.listen((e) {
+      count = e.snapshot.val();
+    });
   }
 }
