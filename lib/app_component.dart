@@ -38,12 +38,12 @@ class AppComponent implements OnInit {
     });
   }
 
-  dislike() {
-    print("dislike");
+  dislike() async {
+    count = await updateDatabase((c) => c - 1);
   }
 
-  like() {
-    print("like");
+  like() async {
+    count = await updateDatabase((c) => c + 1);
   }
 
   Future<int> updateDatabase(Function update) async {
