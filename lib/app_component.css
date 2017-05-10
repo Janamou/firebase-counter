@@ -1,3 +1,4 @@
-:host {
-    /* This is equivalent of the 'body' selector of a page. */
+span {
+  font-size: 300%;
+  padding: 0 1rem;
 }
