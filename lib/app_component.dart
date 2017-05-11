@@ -13,6 +13,8 @@ import 'todo_list/todo_list_component.dart';
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
 
+typedef T UpdateFunction<T>(T value);
+
 @Component(
   selector: 'my-app',
   styleUrls: const ['app_component.css'],
@@ -46,7 +48,7 @@ class AppComponent implements OnInit {
     count = await updateDatabase((c) => c + 1);
   }
 
-  Future<int> updateDatabase(Function update) async {
+  Future<int> updateDatabase(UpdateFunction<int> update) async {
     var transaction = await ref.transaction((current) {
       if (current != null) {
         current = update(current);
