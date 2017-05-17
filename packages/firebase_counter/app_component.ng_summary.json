@@ -11,7 +11,7 @@
         "5": false
       },
       {
-        "1": "package:angular2/core.dart",
+        "1": "package:angular2/angular2.dart",
         "5": false
       },
       {
@@ -30,6 +30,9 @@
           "OnInit"
         ],
         "7": [
+          {
+            "2": "CORE_DIRECTIVES"
+          },
           {
             "2": "materialDirectives"
           },
@@ -88,6 +91,13 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
+    },
+    "UpdateFunction": {
+      "class": "Identifier",
+      "name": "UpdateFunction",
+      "moduleUrl": "asset:firebase_counter/lib/app_component.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

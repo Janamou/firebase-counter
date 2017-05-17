@@ -7,7 +7,7 @@
         "5": false
       },
       {
-        "1": "package:angular2/core.dart",
+        "1": "package:angular2/angular2.dart",
         "5": false
       },
       {
@@ -33,6 +33,9 @@
         ],
         "7": [
           {
+            "2": "CORE_DIRECTIVES"
+          },
+          {
             "2": "materialDirectives"
           }
         ]
@@ -41,7 +44,7 @@
     "6": "todo_list_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/angular2.template.dart",
         "4": "i0"
       },
       {
