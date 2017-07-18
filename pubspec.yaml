@@ -2,7 +2,7 @@ name: firebase_counter
 description: A web app that uses AngularDart Components
 version: 0.0.1
 #homepage: https://www.example.com
-#author: you <email@example.com>
+#author: janamou <email@example.com>
 
 environment:
   sdk: '>=1.23.0 <2.0.0'
@@ -10,7 +10,7 @@ environment:
 dependencies:
   angular2: ^3.0.0
   angular_components: ^0.5.1
-  firebase: ^3.0.0
+  firebase: ^4.0.0
 
 dev_dependencies:
   angular_test: ^1.0.0-beta+2
@@ -26,3 +26,9 @@ transformers:
 - test/pub_serve:
     $include: test/**_test.dart
 - dart_to_js_script_rewriter
+
+# Uncomment the following in sdk 1.24+ to make pub serve
+# use dartdevc (webdev.dartlang.org/tools/dartdevc).
+#web:
+#  compiler:
+#    debug: dartdevc

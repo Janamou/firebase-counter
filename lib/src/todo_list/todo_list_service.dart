@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:angular2/angular2.dart';
+import 'package:angular2/core.dart';
 
 /// Mock service emulating access to a to-do list stored on a server.
 @Injectable()

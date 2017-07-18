@@ -1,4 +1,4 @@
-// Copyright (c) 2017. All rights reserved. Use of this source code
+// Copyright (c) 2017, janamou. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'dart:async';
@@ -12,7 +12,10 @@ import 'todo_list_service.dart';
   selector: 'todo-list',
   styleUrls: const ['todo_list_component.css'],
   templateUrl: 'todo_list_component.html',
-  directives: const [CORE_DIRECTIVES, materialDirectives],
+  directives: const [
+    CORE_DIRECTIVES,
+    materialDirectives,
+  ],
   providers: const [TodoListService],
 )
 class TodoListComponent implements OnInit {
@@ -28,7 +31,10 @@ class TodoListComponent implements OnInit {
     items = await todoListService.getTodoList();
   }
 
-  void add(String description) => items.add(description);
+  void add() {
+    items.add(newTodo);
+    newTodo = '';
+  }
   String remove(int index) => items.removeAt(index);
   void onReorder(ReorderEvent e) =>
       items.insert(e.destIndex, items.removeAt(e.sourceIndex));
