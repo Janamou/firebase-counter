@@ -17,7 +17,11 @@ typedef T UpdateFunction<T>(T value);
   selector: 'my-app',
   styleUrls: const ['app_component.css'],
   templateUrl: 'app_component.html',
-  directives: const [materialDirectives, TodoListComponent],
+  directives: const [
+    materialDirectives,
+    TodoListComponent,
+    MaterialIconComponent
+  ],
   providers: const [materialProviders],
 )
 class AppComponent implements OnInit {
