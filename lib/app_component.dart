@@ -2,7 +2,7 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'dart:async';
-import 'package:angular2/angular2.dart';
+import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:firebase/firebase.dart';
 
@@ -17,7 +17,11 @@ typedef T UpdateFunction<T>(T value);
   selector: 'my-app',
   styleUrls: const ['app_component.css'],
   templateUrl: 'app_component.html',
-  directives: const [materialDirectives, TodoListComponent],
+  directives: const [
+    materialDirectives,
+    TodoListComponent,
+    MaterialIconComponent
+  ],
   providers: const [materialProviders],
 )
 class AppComponent implements OnInit {
