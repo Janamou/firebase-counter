@@ -1,0 +1,18 @@
+# See https://github.com/dart-lang/build/tree/master/build_web_compilers#configuration
+# Matches previous configuration in pubspec.yaml - transformers - $dart2js
+targets:
+  $default:
+    builders:
+      build_web_compilers|entrypoint:
+        # These are globs for the entrypoints you want to compile.
+        generate_for:
+        - web/**.dart
+        options:
+          dart2js_args:
+            - --dump-info
+            - --minify
+            - --no-frequency-based-minification
+            - --no-source-maps
+            - --show-package-warnings
+            - --trust-primitives
+            - --trust-type-annotations
