@@ -27,10 +27,11 @@ class AppComponent implements OnInit {
   @override
   ngOnInit() {
     initializeApp(
-        apiKey: "AIzaSyAH7S_gsce9RtNI8w0z7doiP3ugVJM8ZbI",
-        authDomain: "angulardart-firebase-io-2017.firebaseapp.com",
-        databaseURL: "https://angulardart-firebase-io-2017.firebaseio.com",
-        storageBucket: "angulardart-firebase-io-2017.appspot.com");
+        // TODO: replace with your Firebase project credentials
+        apiKey: "USE-YOUR-OWN-API-KEY-FROM-CLOUD-CONSOLE",
+        authDomain: "your-domain.firebaseapp.com",
+        databaseURL: "https://your-domain.firebaseio.com",
+        storageBucket: "your-domain.appspot.com");
 
     ref = database().ref('counter');
     ref.onValue.listen((e) {
