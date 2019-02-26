@@ -3,8 +3,8 @@
 
 import 'package:angular/angular.dart';
 
-import 'package:firebase_counter/app_component.dart';
+import 'package:firebase_counter/app_component.template.dart' as ng;
 
 void main() {
-  bootstrap(AppComponent);
+  runApp(ng.AppComponentNgFactory);
 }

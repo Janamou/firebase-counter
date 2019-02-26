@@ -13,7 +13,7 @@ import 'todo_list_service.dart';
   styleUrls: const ['todo_list_component.css'],
   templateUrl: 'todo_list_component.html',
   directives: const [
-    CORE_DIRECTIVES,
+    coreDirectives,
     materialDirectives,
   ],
   providers: const [TodoListService],
